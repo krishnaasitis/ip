@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+<title>ajaxinsert</title>
+ </head>
+ <body>
+<div id="responses">
+<form name="form1" action="" method="post">
+
+	Name:
+<input type="text" id="t1" size="20" name="t1"><br><br>
+	Comment: 
+<textarea type="text" id="t2" name="t2"></textarea><br>
+
+<input type="button" name="button1" value="Submit" onClick="aa();"><br>
+<div id="d1"></div>
+</form>
+</div>
+<script type="text/javascript">
+	function aa() {
+		var xmlhttp=new XMLHttpRequest();
+		xmlhttp.open("GET", "contact-form.php?name="+document.getElementById("t1").value+"&comment="+document.getElementById("t2").value, false);
+		xmlhttp.send(null);
+
+		//this is useful for store response
+		document.getElementById("d1").innerHTML = xmlhttp.responseText;
+	}
+</script>
+</body>
+
+</html>
+
+ 

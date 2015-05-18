@@ -1,0 +1,1 @@
+<a href="http://krishna.ipt.oamk.fi/ip/ex1/index.php">Click here to continue to OAMK news</a> 

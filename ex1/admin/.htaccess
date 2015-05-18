@@ -1,0 +1,4 @@
+AuthName "Login to my page"
+AuthType Basic
+AuthUserFile /home/user/passfile
+Require valid-user
